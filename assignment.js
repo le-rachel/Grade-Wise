@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Assignment/Exam Grade</title>
+
+  <!-- link the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- link the webpage's JavaScript file -->
+  <script src="/assignment.js" defer></script>
+</head>
+
+<body>
+
+  <main>
+
+    <nav>
+      <ul class="nav">
+         <li class="nav-li"><a href="index.html">Home</a></li>
+        <li class="nav-li"><a href="faqs.html">FAQS</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Assignment/Exam Grade</h1>
+    </header>
+
+    <label for="numCorrect">Amount Correct: </label>
+    <input type="number" id="numCorrect" name="numCorrect"> </br>
+    <label for="totalQuestions">Total Questions: </label>
+    <input type="number" id="totalQuestions" name="totalQuestions"> </br>
+    <label for="halfPoints">Add Half Points Back? </label> 
+    <input type="checkbox" id="halfPoints" name="halfPoints"> </br>
+    <label for="squareRoot">Add Square Root Curve? </label>
+    <input type="checkbox" id="squareRoot" name="squareRoot"> </br>
+    <label for="extraPoints">Add Extra Points? (Input 0 if N/A)</label> </br>
+    <input type="number" id="extraPoints" name="extraPoints"> </br>
+    <button class="submitbtn" id="submitAssignment">Calculate!</button>
+
+    <p class="display" id="grade">Your Grade Is...</p>
+
+    <footer>
+      <p>Made By Rachel Le</p>
+    </footer>
+    
+  </main>
+
+
+  
+</body>
+
+</html>

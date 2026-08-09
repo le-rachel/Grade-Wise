@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GPA</title>
+
+  <!-- link the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- link the webpage's JavaScript file -->
+  <script src="/GPA.js" defer></script>
+</head>
+
+<body>
+
+  <main>
+
+    <nav>
+      <ul class="nav">
+         <li class="nav-li"><a href="index.html">Home</a></li>
+        <li class="nav-li"><a href="faqs.html">FAQS</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>GPA</h1>
+    </header>
+
+    <p id="note">Note: If one semester isn't available/isn't counted, input 0.</p>
+    
+    <div id="classes">
+      <label>Class 1:</label>
+      <label for="c1s1">Semester 1:</label>
+      <input type="number" id="c1s1" name="c1s1">
+      <label for="c1s2">Semester 2:</label>
+      <input type="number" id="c1s2" name="c1s2">
+      <label for="c1type">Type of Class:</label>
+      <select id="c1type" name="c1type">
+        <option value="academic">Academic</option>
+        <option value="preap">Pre-AP</option>
+        <option value="ap">AP/Dual/OnRamps</option>
+      </select> </br>
+    </div>
+    <button class="addbtn" id="addClass" onclick="addClassInput()">Add Class</button> </br>
+
+    <label>What type of GPA should be calculated?</label> </br>
+    <label for="unweighted" class="container">4.0 Unweighted
+      <input class="radio" type="radio" id="unweighted" name="typeGPA"> 
+    </label> </br>
+    <label for="weighted" class="container">4.0 Weighted
+      <input class="radio" type="radio" id="weighted" name="typeGPA"> 
+    </label> </br>
+    <label for="hundred" class="container">100-Point
+      <input class="radio" type="radio" id="hundred" name="typeGPA"> 
+    </label> </br>
+    
+    <button class="submitbtn" id="submitGPA">Calculate!</button>
+
+    <p class="display" id="gpa">Your GPA Is...</p>
+
+    <footer>
+      <p>Made By Rachel Le</p>
+    </footer>
+    
+  </main>
+
+  
+</body>
+
+</html>
